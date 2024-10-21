@@ -1,7 +1,9 @@
 # Windows 10-11 Malware Analysis Lab Setup
 
 ## Overview
-This project guides you through setting up a Windows 10 VM, configuring Flare-VM for malware analysis, and creating a secure environment using pfSense and Remnux to contain and analyze malware safely.
+This project guides you through setting up a Windows 10 VM, configuring Flare-VM for malware analysis, and creating a secure environment using pfSense and Remnux to contain and analyze malware safely. Here is a diagram to visualize how the traffic will be isolated.
+
+![Image](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/Malware%20Analysis%20Network%20Diagram.PNG)
 
 ## Prerequisites
 - **Oracle VirtualBox**: Download [here](https://www.virtualbox.org/).
