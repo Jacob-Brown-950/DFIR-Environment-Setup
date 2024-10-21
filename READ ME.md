@@ -24,7 +24,7 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
   - Ensure your username has no spaces or special characters.
 
 **Image**  
-![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/3)%202gb%20Ram%20for%20Windows%2010%20VM.PNG)
+![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/3%202gb%20Ram%20for%20Windows%2010%20VM.PNG)
 ![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/5)Download%20process.PNG)
 ![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/5)Download%20process.PNG)
 
