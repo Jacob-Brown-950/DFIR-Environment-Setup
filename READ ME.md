@@ -5,7 +5,7 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 
 ## Prerequisites
 - **Oracle VirtualBox**: Download [here](https://www.virtualbox.org/).
-- **Windows 10 ISO File**: I will include this in the repository.
+- **Windows 10 ISO File**: [here](https://www.bing.com/ck/a?!&&p=ab5b918e3ff54241JmltdHM9MTcyOTQ2ODgwMCZpZ3VpZD0yOWEzMGNjMC00YzViLTZjZjctMDhkYi0xODRkNGQ3MjZkZjAmaW5zaWQ9NTIxMA&ptn=3&ver=2&hsh=3&fclid=29a30cc0-4c5b-6cf7-08db-184d4d726df0&psq=windows+10+iso&u=a1aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9zb2Z0d2FyZS1kb3dubG9hZC93aW5kb3dzMTBJU08_bXNvY2tpZD0yOWEzMGNjMDRjNWI2Y2Y3MDhkYjE4NGQ0ZDcyNmRmMA&ntb=1).
 - **pfSense ISO**: Download [here](https://www.pfsense.org/download/). I will also include this in the repository.
 - **Remnux OVA**: Get the OVA file from [Remnux Official Site](https://docs.remnux.org/install-distro/get-virtual-appliance).
 
