@@ -25,8 +25,8 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 
 **Image**  
 ![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/3%202gb%20Ram%20for%20Windows%2010%20VM.PNG)
-![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/5)Download%20process.PNG)
-![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/5)Download%20process.PNG)
+![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/4%2080Gb%20Storage%20for%20Windows%20VM.PNG)
+![Windows 10 VM Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/5%20Download%20process.PNG)
 
 ---
 
@@ -35,17 +35,12 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
   - Remove Windows Security features via Group Policy and Windows Defender settings.
 - Download and run the PowerShell installation script from the repo in your **Desktop** directory.
 
-**Image**  
-![Flare-VM Installation](path/to/image2.png)
-
----
-
 ### 3. Configuring Flare-VM Features
 - The Flare-VM installer will prompt you to choose additional features. The default set is sufficient, but feel free to add more.
 - The installation may take up to an hour, depending on selected features.
 
 **Image**  
-![Flare-VM Feature Selection](path/to/image3.png)
+![Flare-VM Feature Selection](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/6%20Install%20FlareVM%20and%20choose%20what%20features%20you%20want%2C%20i%20left%20mine%20default.PNG)
 
 ---
 
@@ -59,8 +54,10 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
   - Ensure DHCP is disabled.
 
 **Image**  
-![pfSense Network Adapter Setup](path/to/image4.png)
-
+![pfSense Network Adapter Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/7%20Setup%20pfsense%20with%20baseline%20RAM.PNG)
+![pfSense Network Adapter Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/8%20Give%2012%20gb%20of%20space%20to%20pfsense.PNG)
+![pfSense Network Adapter Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/9%20Create%202nd%20network%20adapter%20in%20filestoolsnetworkmanmager.PNG)
+![pfSense Network Adapter Setup](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/10%20Enable%20second%20adapter%20on%20pfsense%20and%20set%20to%20host%20only.PNG)
 ---
 
 ### 5. Installing pfSense
@@ -69,7 +66,8 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 - Boot up pfSense and verify the setup screen.
 
 **Image**  
-![pfSense Setup Screen](path/to/image5.png)
+![pfSense Setup Screen](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/11%20Remove%20the%20ISO%20image%20after%20you%20install%20pfsense.PNG)
+![pfSense Setup Screen](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/12%20Once%20pfsense%20is%20done%20booting%20you%20should%20see%20this%20screen.PNG)
 
 ---
 
@@ -78,7 +76,8 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 - Set the network adapter for Remnux to the **host-only** adapter created earlier.
 
 **Image**  
-![Remnux Import and Network Configuration](path/to/image6.png)
+![Remnux Import and Network Configuration](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/13%20Remnux%20Installed.PNG)
+![Remnux Import and Network Configuration](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/14%20change%20Remna%20network%20adapter%20settings%20to%20host%20only.PNG)
 
 ---
 
@@ -87,15 +86,16 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 - Access the pfSense web GUI via the default gateway and configure the LAN interface and DNS settings.
 
 **Image**  
-![Flare-VM Connected to pfSense](path/to/image7.png)
-
+![Flare-VM Connected to pfSense](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/15%20Navigate%20to%20pfsense%20GUI.PNG)
+![Flare-VM Connected to pfSense](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/16%20Setting%20pfsense%20name%20and%20DNS%20settings.PNG)
+![Flare-VM Connected to pfSense](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/17%20Set%20LAN%20IP%20for%20pfsense.PNG)
 ---
 
 ### 8. Configuring Firewall Rules in pfSense
-- Go to `Firewall > Rules` and create rules to prevent the VM from accessing your local network while maintaining internet connectivity.
+- Go to `Firewall > Rules` and create rules to prevent the FlareVM from accessing your local network while maintaining internet connectivity.
 
 **Image**  
-![Firewall Rules in pfSense](path/to/image8.png)
+![Firewall Rules in pfSense](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/18%20Setup%20your%20firewall%20rule%20to%20isolate%20it%20from%20local%20network%2C%20but%20still%20allow%20access.PNG)
 
 ---
 
@@ -104,16 +104,16 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 - Start the **fakedns** service for simulating DNS traffic during analysis.
 
 **Image**  
-![Remnux DNS Configuration](path/to/image9.png)
+![Remnux DNS Configuration](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/21%20Configure%20Remnux%20netplan.PNG)
 
 ---
 
 ### 10. Downloading and Testing Malware
 - Download a malware sample like **WannaCry** from [MalwareZoo](https://github.com/abuisa/MalwareZoo).
-- Before running the malware, switch the Flare-VM to the Remnux environment for isolated testing.
+- Before running the malware, Turn off your PfSense, and activate Remnux fakedns
 
 **Image**  
-![Malware Execution in Flare-VM](path/to/image10.png)
+![Malware Execution in Flare-VM](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/24%20I%20got%20hacked!.PNG)
 
 ---
 
@@ -122,7 +122,7 @@ This project guides you through setting up a Windows 10 VM, configuring Flare-VM
 - After testing, restore the snapshot to reset your environment.
 
 **Image**  
-![Snapshot Management in VirtualBox](path/to/image11.png)
+![Snapshot Management in VirtualBox](https://github.com/Jacob-Brown-950/Malware-Analysis-Environment/blob/main/Screenshots/25%20Restore%20your%20infected%20machine%20to%20its%20original%20snapshot.PNG)
 
 ---
 
